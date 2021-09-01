@@ -1,6 +1,7 @@
-@import "./Base/";
-@import "./Components/";
-@import "./Layout/";
-@import "./Pages/";
-@import "./Utils/";
+@import "./Base/base";
+@import "./Base/typography";
+@import "./Utils/functions";
+@import "./Utils/mixins";
+@import "./Utils/variables";
+@import "./styles.scss";
 

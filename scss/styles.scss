@@ -1,0 +1,67 @@
+header {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+    img {
+        width: 40%;
+    }
+}
+
+
+
+
+
+footer {
+    background-color: $grey-dark;
+    color: white;
+    padding:20px;
+    & a {
+      color: white;
+    }
+    & h2 {
+        font-family: 'Shrikhand', sans-serif;
+        margin: 0px;
+        font-size: 16px;
+        font-weight: lighter;}
+    
+    & li {
+        list-style: none;
+        line-height: 30px;
+    }
+    & ul {
+        padding: 0px;}
+
+    & i{
+        font-size: 12px;
+    }
+    
+    .footer__boxes {
+        display: flex;
+    }
+        
+    .footer__icones {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 10px;
+    }
+    .footer__text{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+h1 {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    height: 30px;
+    width: 30px;
+}
+
