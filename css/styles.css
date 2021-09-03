@@ -10,6 +10,19 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.loader {
+  display: flex;
+}
+.loader__dot {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  background-color: indigo;
+  height: 33px;
+  width: 33px;
+  border-radius: 20px;
+}
+
 h1 {
   font-size: 24px;
 }
@@ -17,10 +30,6 @@ h1 {
 a {
   text-decoration: none;
   color: black;
-}
-
-i {
-  font-size: 16px;
 }
 
 header {
@@ -75,22 +84,45 @@ header img {
   justify-content: center;
   padding-bottom: 50px;
 }
+#introduction .btn {
+  background-color: #9356dc;
+  border-radius: 30px;
+  border: none;
+  padding: 20px;
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  font: inherit;
+  box-shadow: 0px 2px 6px 1px #c1c1c1;
+}
+#introduction .btn:hover {
+  box-shadow: 0px 2px 6px 3px #c1c1c1;
+  background: linear-gradient(338deg, #9356dc, #ff79da);
+}
 
 #fonctionnement {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
 }
-#fonctionnement ol {
-  padding: 0px;
-  margin: 20px;
-}
-#fonctionnement li {
+#fonctionnement .choices {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #f6f6f6;
   padding: 20px;
   box-shadow: 4px 4px 14px 1px #e4e4e4;
   border-radius: 20px;
-  margin: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#fonctionnement ::marker {
+  color: #9356dc;
+}
+#fonctionnement i {
+  font-size: 20px;
+  color: grey;
 }
 
 #restaurants {

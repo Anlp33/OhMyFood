@@ -1,3 +1,18 @@
+//LOADER//
+
+.loader {
+  display: flex;
+  &__dot {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: indigo;
+    height: 33px;
+    width: 33px;
+    border-radius: 20px;
+  }
+}
+
 h1 {
   font-size: 24px;
 }
@@ -5,10 +20,6 @@ h1 {
 a {
   text-decoration: none;
   color: black;
-}
-
-i {
-  font-size: 16px;
 }
 
 header {
@@ -63,23 +74,48 @@ header {
     justify-content: center;
     padding-bottom: 50px;
   }
+  .btn {
+    background-color: $colour-primary;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 18px;
+    font: inherit;
+    box-shadow: 0px 2px 6px 1px #c1c1c1;
+
+    &:hover {
+      box-shadow: 0px 2px 6px 3px #c1c1c1;
+      background: linear-gradient(338deg, $colour-primary, $colour-secondary);
+    }
+  }
 }
 
 #fonctionnement {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
 
-  ol {
-    padding: 0px;
-    margin: 20px;
-  }
-  li {
+  .choices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: $grey-light;
     padding: 20px;
     box-shadow: 4px 4px 14px 1px rgb(228, 228, 228);
     border-radius: 20px;
-    margin: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  ::marker {
+    color: $colour-primary;
+  }
+  i {
+    font-size: 20px;
+    color: grey;
   }
 }
 
