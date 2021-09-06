@@ -10,31 +10,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-size: 24px;
-}
-
 a {
   text-decoration: none;
   color: black;
-}
-
-i {
-  font-size: 16px;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 10px;
-}
-
-header img {
-  width: 50%;
 }
 
 #location {
@@ -42,10 +20,12 @@ header img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #eaeaea;
   padding: 15px;
+  -webkit-box-shadow: inset -1px 3px 5px 0px #c1c1c1;
+          box-shadow: inset -1px 3px 5px 0px #c1c1c1;
 }
 
 #location i {
@@ -110,8 +90,8 @@ header img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 50px;
 }
 
@@ -121,25 +101,78 @@ header img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-#fonctionnement ol {
-  padding: 0px;
-  margin: 20px;
-}
-
-#fonctionnement li {
-  background-color: #f6f6f6;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
-  -webkit-box-shadow: 4px 4px 14px 1px #e4e4e4;
-  box-shadow: 4px 4px 14px 1px #e4e4e4;
+}
+
+#fonctionnement h2 {
+  font-size: 22px;
+}
+
+#fonctionnement h3 {
+  font-size: 16px;
+}
+
+#fonctionnement .choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0px 15px 15px;
+}
+
+#fonctionnement .choices_boxes {
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 4px 3px 10px 0px #c1c1c1;
+          box-shadow: 4px 3px 10px 0px #c1c1c1;
   border-radius: 20px;
-  margin: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#fonctionnement .number {
+  background-color: #9356dc;
+  color: white;
+  height: 25px;
+  width: 25px;
+  font-size: 14px;
+  margin-left: -20px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: lighter;
+}
+
+#fonctionnement ::marker {
+  color: #9356dc;
+}
+
+#fonctionnement i {
+  font-size: 20px;
+  color: grey;
+  width: 15%;
+  margin-left: 20px;
 }
 
 #restaurants {
@@ -153,19 +186,19 @@ header img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 20px;
-  -webkit-box-shadow: 4px 4px 14px 1px #e4e4e4;
-  box-shadow: 4px 4px 14px 1px #e4e4e4;
+  -webkit-box-shadow: 4px 3px 10px 0px #c1c1c1;
+          box-shadow: 4px 3px 10px 0px #c1c1c1;
   margin-bottom: 20px;
 }
 
 .box img {
   width: 100%;
-  height: 180px;
+  height: 160px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -174,11 +207,11 @@ header img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px;
 }
 
@@ -237,10 +270,13 @@ footer .footer__icones {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
   margin-right: 10px;
 }
 
@@ -250,7 +286,75 @@ footer .footer__text {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: 0;
+          flex-direction: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
+  margin: 15px;
+}
+
+header img {
+  width: 50%;
+}
+
+.btn {
+  background-color: #9356dc;
+  border-radius: 30px;
+  border: none;
+  padding: 20px;
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  font: inherit;
+  -webkit-box-shadow: 0px 2px 6px 1px #c1c1c1;
+          box-shadow: 0px 2px 6px 1px #c1c1c1;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0px 2px 6px 3px #c1c1c1;
+          box-shadow: 0px 2px 6px 3px #c1c1c1;
+  background: linear-gradient(338deg, #9356dc, #ff79da);
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #353535;
+  width: 100%;
+  height: 100%;
+}
+
+.loader .dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  height: 33px;
+  width: 33px;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */

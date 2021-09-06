@@ -1,0 +1,48 @@
+ 
+.loader {
+  @include flex (column, center, center);
+  width: 100%;
+  height: 100%;
+ 
+img {
+    margin-bottom: 30px;
+}
+  .loading {
+    display: flex;
+  }
+  .dot {
+    background-color: $colour-primary;
+    margin: 10px;
+    height: 33px;
+    width: 33px;
+    border-radius: 20px;
+    animation: 3s flash 1.2s linear infinite;
+
+    &:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+    &:nth-child(2) {
+        animation-delay: 0.4s;
+        
+    }
+    &:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+  }
+}
+
+@keyframes flash {
+    0% {
+        background-color: $colour-primary ;
+        text-shadow: 0 0 7px $colour-primary;
+    }
+
+    50% {
+        background-color: $colour-secondary;
+        text-shadow: $colour-secondary;
+    }
+    100% {
+        background-color: $colour-tertiary;
+        text-shadow: 0 0 7px $colour-tertiary;
+    }
+}
