@@ -1,9 +1,8 @@
 @mixin box-shadow {
         box-shadow: 4px 3px 10px 0px #c1c1c1;
 }
-@mixin flex ($direction, $justify, $align){
+@mixin flex-column {
     display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+    flex-direction: column;
 }
+

@@ -5,6 +5,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   height: 100%;
+  opacity: 1;
 }
 
 body {
@@ -30,6 +31,7 @@ a {
 .btn:hover {
   box-shadow: 0px 2px 6px 3px #c1c1c1;
   background: linear-gradient(338deg, #9356dc, #ff79da);
+  cursor: pointer;
 }
 
 #location {
@@ -165,23 +167,19 @@ a {
 .footer {
   background-color: #353535;
   color: white;
-  padding: 20px;
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
 }
 .footer a {
   color: white;
 }
 .footer p {
   font-family: "Shrikhand", sans-serif;
-  margin: 0px;
-  font-size: 16px;
+  margin: 0px 0px 10px 0px;
+  font-size: 18px;
   font-weight: lighter;
-}
-.footer li {
-  list-style: none;
-  line-height: 30px;
-}
-.footer ul {
-  padding: 0px;
 }
 .footer i {
   font-size: 12px;
@@ -193,21 +191,17 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: 0;
   margin-right: 10px;
 }
 .footer__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: 0;
 }
 
 header {
   display: flex;
-  flex-direction: 0;
   justify-content: center;
-  align-items: 0;
   margin: 15px;
 }
 header img {
@@ -223,12 +217,16 @@ header img {
   height: 100%;
   position: absolute;
   background-color: white;
+  animation: loader 0.4s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
 }
 .loader img {
   margin-bottom: 30px;
 }
-.loader .loading {
+.loader__box {
   display: flex;
+  justify-content: center;
 }
 .loader .dot {
   background-color: #9356dc;
@@ -236,7 +234,7 @@ header img {
   height: 33px;
   width: 33px;
   border-radius: 20px;
-  animation: 3s flash 1.2s linear infinite;
+  animation: flash 1s infinite;
 }
 .loader .dot:nth-child(1) {
   animation-delay: 0.2s;
@@ -251,15 +249,17 @@ header img {
 @keyframes flash {
   0% {
     background-color: #9356dc;
-    text-shadow: 0 0 7px #9356dc;
   }
   50% {
     background-color: #ff79da;
-    text-shadow: #ff79da;
   }
   100% {
     background-color: #99e2d0;
-    text-shadow: 0 0 7px #99e2d0;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
   }
 }
 

@@ -1,23 +1,18 @@
 .footer {
   background-color: $grey-dark;
   color: white;
-  padding: 20px;
+  padding: 20px 20px 30px 20px;
+  @include flex-column;
+  line-height: 30px;
+
   a {
     color: white;
   }
   p {
     font-family: "Shrikhand", sans-serif;
-    margin: 0px;
-    font-size: 16px;
+    margin: 0px 0px 10px 0px;
+    font-size: 18px;
     font-weight: lighter;
-  }
-
-  li {
-    list-style: none;
-    line-height: 30px;
-  }
-  ul {
-    padding: 0px;
   }
 
   i {
@@ -27,11 +22,13 @@
       display: flex;
   }
   &__icones {
-    @include flex (column, space-around, 0);
+    @include flex-column;
+    justify-content: space-around;
     margin-right: 10px;
   }
   &__text {
-      @include flex (column, center, 0);
+      @include flex-column;
+    justify-content: center;
   }
 }
   

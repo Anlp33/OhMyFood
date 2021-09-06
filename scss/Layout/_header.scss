@@ -1,5 +1,6 @@
 header {
-  @include flex (0, center, 0);
+  display: flex;
+  justify-content: center;
   margin: 15px;
 
   img {
