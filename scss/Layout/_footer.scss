@@ -1,36 +1,36 @@
-footer {
+.footer {
   background-color: $grey-dark;
   color: white;
   padding: 20px;
-  & a {
+  a {
     color: white;
   }
-  & h2 {
+  p {
     font-family: "Shrikhand", sans-serif;
     margin: 0px;
     font-size: 16px;
     font-weight: lighter;
   }
 
-  & li {
+  li {
     list-style: none;
     line-height: 30px;
   }
-  & ul {
+  ul {
     padding: 0px;
   }
 
   i {
     font-size: 12px;
   }
-  .footer__boxes {
+  &__boxes {
       display: flex;
   }
-  .footer__icones {
+  &__icones {
     @include flex (column, space-around, 0);
     margin-right: 10px;
   }
-  .footer__text {
+  &__text {
       @include flex (column, center, 0);
   }
 }
