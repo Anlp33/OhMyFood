@@ -18,7 +18,7 @@ a {
 }
 
 .btn {
-  background-color: #9356dc;
+  background: linear-gradient(338deg, #9356dc, #ff79da);
   border-radius: 30px;
   border: none;
   padding: 20px;
@@ -30,7 +30,6 @@ a {
 }
 .btn:hover {
   box-shadow: 0px 2px 6px 3px #c1c1c1;
-  background: linear-gradient(338deg, #9356dc, #ff79da);
   cursor: pointer;
 }
 
@@ -260,6 +259,7 @@ header img {
 @keyframes loader {
   100% {
     opacity: 0;
+    z-index: -10;
   }
 }
 
