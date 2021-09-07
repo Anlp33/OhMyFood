@@ -7,7 +7,7 @@
   height: 100%;
   position: fixed;
   background-color: white ;
-    animation: loader 0.4s;
+  animation: loader 0.4s;
   animation-delay: 2.5s;
   animation-fill-mode: both;
 
@@ -26,7 +26,7 @@ img {
     height: 33px;
     width: 33px;
     border-radius: 20px;
-    animation: flash 1s infinite;
+    animation: 1s flash 1s infinite;
 
 
 
@@ -43,24 +43,3 @@ img {
   }
 }
 
-@keyframes flash {
-    0% {
-        background-color: $colour-primary ;
-    }
-
-    50% {
-        background-color: $colour-secondary;
-     
-    }
-    100% {
-        background-color: $colour-tertiary;
-
-    }
-}
-
-@keyframes loader {
-    100% {
-        opacity: 0;
-        z-index: -10;
-    }
-}

@@ -1,0 +1,31 @@
+@keyframes flash {
+    0% {
+        background-color: $colour-primary ;
+    }
+
+    50% {
+        background-color: $colour-secondary;
+     
+    }
+    100% {
+        background-color: $colour-tertiary;
+
+    }
+}
+
+@keyframes loader {
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+
+
+  @keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
