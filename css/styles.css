@@ -8,6 +8,11 @@ body {
   opacity: 1;
 }
 
+i.far.fa-heart {
+  font-size: 26px;
+  padding-right: 10px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -21,11 +26,10 @@ a {
   background: linear-gradient(338deg, #9356dc, #ff79da);
   border-radius: 30px;
   border: none;
-  padding: 20px;
+  padding: 20px 30px;
   color: white;
   font-family: "Roboto";
   font-size: 18px;
-  font: inherit;
   box-shadow: 0px 2px 6px 1px #c1c1c1;
 }
 .btn:hover {
@@ -158,10 +162,6 @@ a {
 .box p {
   margin: 4px 0px 0px 0px;
 }
-.box i {
-  font-size: 26px;
-  padding-right: 10px;
-}
 
 .footer {
   background-color: #353535;
@@ -201,7 +201,7 @@ a {
 header {
   display: flex;
   justify-content: center;
-  margin: 15px;
+  padding: 15px;
 }
 header img {
   width: 50%;
@@ -214,10 +214,10 @@ header img {
   align-items: center;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   background-color: white;
   animation: loader 0.4s;
-  animation-delay: 3s;
+  animation-delay: 2.5s;
   animation-fill-mode: both;
 }
 .loader img {
@@ -261,6 +261,85 @@ header img {
     opacity: 0;
     z-index: -10;
   }
+}
+.header {
+  padding: 15px 15px 10px 15px;
+}
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.header__logo img {
+  height: 30px;
+  width: 100%;
+}
+.header__arrow {
+  color: #353535;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 15px;
+  font-size: 20px;
+}
+
+.image_main img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  position: relative;
+  margin-top: -50px;
+  background-color: #f6f6f6;
+  border-radius: 40px;
+  padding: 30px 20px;
+}
+.menu h1 {
+  font-family: "Shrikhand", sans-serif;
+  margin: 0;
+  font-weight: lighter;
+  font-size: 28px;
+}
+.menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu h2 {
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.menu h3 {
+  margin: 0;
+  font-size: 20px;
+}
+.menu p {
+  margin: 4px 0px 0px 0px;
+}
+
+.courses {
+  background-color: white;
+  border-radius: 20px;
+  padding: 12px;
+  box-shadow: 4px 3px 10px 0px #c1c1c1;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.courses__price {
+  font-weight: bold;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

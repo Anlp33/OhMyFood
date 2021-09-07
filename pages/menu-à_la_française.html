@@ -13,126 +13,132 @@
     <title>À la française</title>
   </head>
   <body>
-    <header>
-      <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+    <header class="header">
+      <div class="header__container">
+        <span class="header__arrow">
+        <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+        </span>
+
+        <span class="header__logo">
       <img src="../images/logo/ohmyfood@2x.svg"alt="logo" />
-      <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant" />
+      </span>
+    </div>
     </header>
+
 <main>
-    <section class="menu">
-      <div class="menu_title">
+  <div class="image_main">
+   <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant" />
+</div>
+     
+   <section class="menu">
+      <div class="menu__title">
         <h1>À la française</h1>
         <i class="far fa-heart"></i>
       </div>
-      <article class="courses">
-        <div class="courses_type">
           <h2>ENTRÉES</h2>
         </div>
-        <div class="box_courses">
-          <div class="courses_title">
+        <div class="courses">
+          <div class="courses__title">
             <h3>Tartare de poulpe acidulé</h3>
             <p>Aux zestes d'orange</p>
           </div>
-          <div class="courses_price">
+          <div class="courses__price">
             <p>25€</p>
           </div>
         </div>
-      </article>
 
-        <div class="box_courses">
-          <div class="courses_title">
+
+        <div class="courses">
+          <div class="courses__title">
             <h3>Velouté de légumes d'antan</h3>
             <p>Carotte, panais, topinambour</p>
           </div>
-          <div class="courses_price">
+          <div class="courses__price">
             <p>35€</p>
           </div>
         </div>
-      </article>
 
-        <div class="box_courses">
-          <div class="courses_title">
+
+        <div class="courses">
+          <div class="courses__title">
             <h3>Soupe à l'oignon</h3>
             <p>Revisitée</p>
           </div>
-          <div class="courses_price">
+          <div class="courses__price">
             <p>20€</p>
           </div>
         </div>
-      </article>
 
-        <div class="courses_type">
           <h2>PLATS</h2>
-        </div>
-        <div class="box_courses">
-          <div class="courses_title">
+
+        <div class="courses">
+          <div class="courses__title">
             <h3>Coquilles Saint-Jacques</h3>
             <p>Accompagnées d'une purée de panais</p>
           </div>
-          <div class="courses_price">
+          <div class="courses__price">
             <p>40€</p>
           </div>
         </div>
 
-           <div class="box_courses">
-          <div class="courses_title">
+           <div class="courses">
+          <div class="courses__title">
             <h3>Magret de canard</h3>
             <p>Et parmentier de pommes de terre</p>
           </div>
-          <div class="courses_price">
+          <div class="courses__price">
             <p>35€</p>
           </div>
         </div>
 
-           <div class="box_courses">
-          <div class="courses_title">
+           <div class="courses">
+          <div class="courses__title">
             <h3>Pigeonneau d'Ille-et-Vilaine</h3>
             <p>Sur son lit de gnocchis aux légumes</p>
           </div>
-          <div class="courses_price">
+          <div class="courses__price">
             <p>44€</p>
           </div>
         </div>
 
-         <div class="courses_type">
           <h2>DESSERTS</h2>
-        </div>
-        <div class="box_courses">
-          <div class="courses_title">
+
+        <div class="courses">
+          <div class="courses__title">
             <h3>Pétales de violettes glacés</h3>
             <p>Et purée de noisettes</p>
           </div>
-          <div class="courses_price">
+          <div class="courses__price">
             <p>18€</p>
           </div>
         </div>
 
-         <div class="box_courses">
-          <div class="courses_title">
+         <div class="courses">
+          <div class="courses__title">
             <h3>Fondant au chocolat</h3>
             <p>Revisité</p>
           </div>
-          <div class="courses_price">
+          <div class="courses__price">
             <p>22€</p>
           </div>
         </div>
 
-         <div class="box_courses">
-          <div class="courses_title">
+         <div class="courses">
+          <div class="courses__title">
             <h3>Millefeuille croustillant</h3>
             <p>Myrtilles et pâte d'amande</p>
           </div>
-          <div class="courses_price">
+          <div class="courses__price">
             <p>23€</p>
           </div>
         </div>
-
-        <button class="order">Commander</button>
+        <div class="order">
+        <button class="btn">Commander</button>
+        </div>
     </section>
 </main>
-        <footer>
-      <h2>ohmyfood</h2>
-      <ul>
+ <footer class="footer">
+      <p>ohmyfood</p>
         <div class="footer__boxes">
           <div class="footer__icones">
             <i class="fas fa-utensils"></i>
@@ -140,13 +146,12 @@
           </div>
 
           <div class="footer__text">
-            <li><a href="#">Proposer un restaurant</a></li>
-            <li><a href="#">Devenir partenaire</a></li>
+            <a href="#">Proposer un restaurant</a>
+           <a href="#">Devenir partenaire</a>
           </div>
         </div>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="mailto:anissa.ohmyfood@gmail.com">Contact</a></li>
-      </ul>
+        <a href="#">Mentions légales</a> 
+        <a href="mailto:anissa.ohmyfood@gmail.com">Contact</a>
     </footer>
 
   </body>
