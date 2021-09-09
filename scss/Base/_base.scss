@@ -6,8 +6,11 @@ body {
     opacity: 1;
 }
 
-  i.far.fa-heart {
+  i.far.fa-heart, i.fas.fa-heart {
     font-size: 26px;
     padding-right: 10px;
   }
 
+  i.fas.fa-heart {
+    color: $colour-secondary;
+  }

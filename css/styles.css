@@ -8,9 +8,13 @@ body {
   opacity: 1;
 }
 
-i.far.fa-heart {
+i.far.fa-heart, i.fas.fa-heart {
   font-size: 26px;
   padding-right: 10px;
+}
+
+i.fas.fa-heart {
+  color: #ff79da;
 }
 
 body {
@@ -261,7 +265,7 @@ header img {
   height: 100%;
   position: fixed;
   background-color: white;
-  animation: flash 0.4s;
+  animation: loader 0.4s;
   animation-delay: 2.5s;
   animation-fill-mode: both;
 }
@@ -414,6 +418,19 @@ header img {
 .order {
   display: flex;
   justify-content: center;
+}
+
+.heart i.far.fa-heart {
+  opacity: 1;
+}
+.heart i.far.fa-heart:hover {
+  opacity: 0;
+}
+.heart i.fas.fa-heart {
+  opacity: 0;
+}
+.heart i.fas.fa-heart:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -55,7 +55,7 @@
     align-items: center;
   }
 
-    h2 {
+  h2 {
     font-weight: normal;
     font-size: 18px;
     margin: 30px 0px 6px 0px;
@@ -70,17 +70,19 @@
   }
 }
 
-  .menu__type {
+.menu__type {
   text-transform: uppercase;
   position: relative;
-     &::after {
+  &::after {
     content: "";
     width: 45px;
     height: 4px;
     position: absolute;
     left: 0;
     background-color: $colour-tertiary;
-    }}
+  }
+}
+
 .courses {
   &__type {
     margin: 25px 0px 45px 0px;
@@ -135,4 +137,21 @@
 .order {
   display: flex;
   justify-content: center;
+}
+
+
+.heart {
+  i.far.fa-heart {
+    opacity: 1;
+    &:hover {
+      opacity: 0;
+    }
+  }
+  
+  i.fas.fa-heart {
+    opacity: 0;
+    &:hover {
+     opacity: 1;
+    }
+  }
 }
