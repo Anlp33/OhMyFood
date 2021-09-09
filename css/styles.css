@@ -373,16 +373,18 @@ header img {
 }
 .courses__price {
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
 }
 .courses__box {
   background-color: white;
   border-radius: 20px;
+  overflow: hidden;
   padding: 12px;
   box-shadow: 4px 3px 10px 0px #c1c1c1;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   animation: fadein 1s;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -413,6 +415,22 @@ header img {
 }
 .courses__box:nth-child(9) {
   animation-delay: 1s;
+}
+.courses__select {
+  background-color: #99e2d0;
+  width: 65px;
+  margin: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.courses__select__tick {
+  background-color: #99e2d0;
+  font-size: 24px;
+}
+.courses__select i {
+  color: white;
 }
 
 .order {

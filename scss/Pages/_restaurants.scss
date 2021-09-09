@@ -89,17 +89,19 @@
   }
   &__price {
     font-weight: bold;
+    display: flex;
+    align-items: flex-end;
   }
 
   &__box {
     background-color: rgb(255 255 255);
     border-radius: 20px;
+    overflow: hidden;
     padding: 12px;
     @include box-shadow;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     animation: fadein 1s;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -132,13 +134,29 @@
       animation-delay: 1s;
     }
   }
+  &__select {
+    background-color: $colour-tertiary;
+    width: 65px;
+    margin: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+
+    &__tick {
+      background-color: $colour-tertiary;
+      font-size: 24px;
+    }
+    i {
+      color: white;
+    }
+  }
 }
 
 .order {
   display: flex;
   justify-content: center;
 }
-
 
 .heart {
   i.far.fa-heart {
@@ -147,11 +165,11 @@
       opacity: 0;
     }
   }
-  
+
   i.fas.fa-heart {
     opacity: 0;
     &:hover {
-     opacity: 1;
+      opacity: 1;
     }
   }
 }
