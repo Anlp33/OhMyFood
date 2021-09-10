@@ -40,7 +40,7 @@
   margin-top: -50px;
   background-color: $grey-light;
   border-radius: 40px;
-  padding: 30px 10px;
+  padding: 10px;
 
 
   h1 {
@@ -59,7 +59,7 @@
   h2 {
     font-weight: normal;
     font-size: 18px;
-    margin: 30px 0px 6px 10px;
+    margin: 10px 0px 6px 10px;
   }
 
   h3 {
@@ -72,6 +72,10 @@
     margin: 4px 0px 0px 0px;
     text-overflow: ellipsis;
     overflow: hidden;
+  }
+
+  &__title {
+    padding: 30px 10px 20px 10px;
   }
 }
 
@@ -96,6 +100,8 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin: 10px;
+    align-items: flex-start;
   }
   &__type {
     margin: 25px 0px 45px 0px;
@@ -196,6 +202,7 @@
     opacity: 1;
     &:hover {
       opacity: 0;
+      cursor: pointer;
     }
   }
 
@@ -203,6 +210,7 @@
     opacity: 0;
     &:hover {
       opacity: 1;
+      cursor: pointer;
     }
   }
 }
