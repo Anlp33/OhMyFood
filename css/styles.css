@@ -329,7 +329,7 @@ header img {
   margin-top: -50px;
   background-color: #f6f6f6;
   border-radius: 40px;
-  padding: 30px 20px;
+  padding: 30px 10px;
 }
 .menu h1 {
   font-family: "Shrikhand", sans-serif;
@@ -345,14 +345,18 @@ header img {
 .menu h2 {
   font-weight: normal;
   font-size: 18px;
-  margin: 30px 0px 6px 0px;
+  margin: 30px 0px 6px 10px;
 }
 .menu h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 17px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu p {
   margin: 4px 0px 0px 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu__type {
@@ -364,10 +368,17 @@ header img {
   width: 45px;
   height: 4px;
   position: absolute;
+  margin-left: 10px;
   left: 0;
   background-color: #99e2d0;
 }
 
+.courses__title {
+  width: 99%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .courses__type {
   margin: 25px 0px 45px 0px;
 }
@@ -375,12 +386,16 @@ header img {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
+  width: 1%;
+  transition: 0.5s ease-in-out;
+  margin: 0px -20px 0px 20px;
 }
 .courses__box {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
   padding: 12px;
+  cursor: pointer;
   box-shadow: 4px 3px 10px 0px #c1c1c1;
   margin-bottom: 20px;
   display: flex;
@@ -418,12 +433,13 @@ header img {
 }
 .courses__select {
   background-color: #99e2d0;
-  width: 65px;
+  transform: translateX(95px);
+  width: 95px;
   margin: -12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 .courses__select__tick {
   background-color: #99e2d0;
@@ -431,6 +447,17 @@ header img {
 }
 .courses__select i {
   color: white;
+}
+.courses:hover .courses__select {
+  transform: translateX(0px);
+}
+.courses:hover .courses__price {
+  margin-right: 50px;
+}
+.courses:hover .courses__select__tick {
+  transform: rotate(360deg);
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
 }
 
 .order {

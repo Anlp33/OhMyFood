@@ -40,7 +40,8 @@
   margin-top: -50px;
   background-color: $grey-light;
   border-radius: 40px;
-  padding: 30px 20px;
+  padding: 30px 10px;
+
 
   h1 {
     font-family: "Shrikhand", sans-serif;
@@ -58,15 +59,19 @@
   h2 {
     font-weight: normal;
     font-size: 18px;
-    margin: 30px 0px 6px 0px;
+    margin: 30px 0px 6px 10px;
   }
 
   h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 17px;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   p {
     margin: 4px 0px 0px 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 
@@ -78,12 +83,20 @@
     width: 45px;
     height: 4px;
     position: absolute;
+    margin-left: 10px;
     left: 0;
     background-color: $colour-tertiary;
   }
 }
 
 .courses {
+
+  &__title {
+    width: 99%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
   &__type {
     margin: 25px 0px 45px 0px;
   }
@@ -91,6 +104,9 @@
     font-weight: bold;
     display: flex;
     align-items: flex-end;
+    width: 1%;
+    transition: 0.5s ease-in-out;
+    margin: 0px -20px 0px 20px;
   }
 
   &__box {
@@ -98,6 +114,7 @@
     border-radius: 20px;
     overflow: hidden;
     padding: 12px;
+    cursor: pointer;
     @include box-shadow;
     margin-bottom: 20px;
     display: flex;
@@ -133,15 +150,18 @@
     &:nth-child(9) {
       animation-delay: 1s;
     }
+
   }
-  &__select {
+    &__select {
     background-color: $colour-tertiary;
-    width: 65px;
+    transform: translateX(95px);
+    width: 95px;
     margin: -12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: 0.5s;
+    transition: 0.5s ease-in-out;
+
 
     &__tick {
       background-color: $colour-tertiary;
@@ -151,6 +171,19 @@
       color: white;
     }
   }
+  
+      &:hover &__select {
+      transform: translateX(0px);
+    }
+    &:hover &__price{
+      margin-right: 50px;
+    }
+
+    &:hover &__select__tick {
+      transform: rotate(360deg);
+      transition-delay: 0.1s;
+      transition-duration: 0.5s;}
+    
 }
 
 .order {
