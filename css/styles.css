@@ -1,5 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@media all and (min-width: 600px) {
+  .choices {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .choices h3 {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .choices__boxes {
+    margin-right: 30px;
+  }
+
+  #restaurants_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 48%;
+  }
+
+  .courses__type {
+    display: flex;
+    justify-content: space-between;
+  }
+  .courses__box {
+    width: 30%;
+  }
+
+  .image_main img {
+    height: 350px;
+  }
+}
 body {
   margin: 0px;
   margin-right: auto;
@@ -195,29 +230,6 @@ i.fas.fa-heart {
   margin: 4px 0px 0px 0px;
 }
 
-@media all and (min-width: 600px) {
-  #fonctionnement .choices {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  #fonctionnement .choices h3 {
-    font-size: 16px;
-    margin-left: 10px;
-  }
-  #fonctionnement .choices__boxes {
-    margin-right: 30px;
-  }
-
-  #restaurants_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .box {
-    width: 48%;
-  }
-}
 .footer {
   background-color: #353535;
   color: white;
@@ -346,7 +358,6 @@ header img {
 .menu__title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .menu h2 {
   font-weight: normal;
@@ -474,6 +485,7 @@ header img {
 .order {
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .heart i.far.fa-heart {

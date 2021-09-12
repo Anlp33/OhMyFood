@@ -1,0 +1,36 @@
+@media all and (min-width: 600px) {
+  .choices {
+    flex-direction: row;
+    justify-content: space-around;
+
+    h3 {
+    font-size: 16px;
+    margin-left: 10px;}
+    
+    &__boxes {
+      margin-right: 30px;
+    }
+  }
+
+  #restaurants_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .box {
+    width: 48%;
+  }
+  .courses {
+      &__type {
+      display: flex;
+      justify-content: space-between;}
+  
+     &__box {
+       width: 30%;}
+    }
+
+   .image_main img {
+       height: 350px;
+   }
+  }
+
