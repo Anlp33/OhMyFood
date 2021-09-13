@@ -1,12 +1,13 @@
 @media all and (min-width: 600px) {
-  .choices {
+  #fonctionnement .choices {
     flex-direction: row;
     justify-content: space-around;
 
     h3 {
-    font-size: 16px;
-    margin-left: 10px;}
-    
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
     &__boxes {
       margin-right: 30px;
     }
@@ -21,16 +22,17 @@
     width: 48%;
   }
   .courses {
-      &__type {
+    &__type {
       display: flex;
-      justify-content: space-between;}
-  
-     &__box {
-       width: 30%;}
+      justify-content: space-between;
     }
 
-   .image_main img {
-       height: 350px;
-   }
+    &__box {
+      width: 30%;
+    }
   }
 
+  .image_main img {
+    height: 350px;
+  }
+}

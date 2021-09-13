@@ -1,7 +1,5 @@
 @import "./Utils/variables";
-@import "./Utils/functions";
 @import "./Utils/mixins";
-@import "./Utils/mediaqueries";
 
 @import "./Base/base";
 @import "./Base/typography";
@@ -15,3 +13,6 @@
 @import "./Pages/loader";
 @import "./Pages/index";
 @import "./Pages/restaurants";
+
+@import "./Utils/mediaqueries";
+

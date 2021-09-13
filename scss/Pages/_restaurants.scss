@@ -1,4 +1,3 @@
-
 .image_main {
   img {
     height: 250px;
@@ -14,7 +13,6 @@
   background-color: $grey-light;
   border-radius: 40px;
   padding: 10px;
-
 
   h1 {
     font-family: "Shrikhand", sans-serif;
@@ -64,9 +62,7 @@
     background-color: $colour-tertiary;
   }
 }
-
 .courses {
-
   &__title {
     width: 99%;
     overflow: hidden;
@@ -76,7 +72,7 @@
     align-items: flex-start;
   }
   &__type {
-    margin: 25px 0px 45px 0px;
+    margin: 35px 0px 45px 0px;
   }
   &__price {
     font-weight: bold;
@@ -105,26 +101,38 @@
       animation-delay: 0.2s;
     }
     &:nth-child(2) {
-      animation-delay: 0.3s;
+      animation-delay: 0.5s;
     }
     &:nth-child(3) {
-      animation-delay: 0.4s;
+      animation-delay: 0.8s;
     }
     &:nth-child(4) {
-      animation-delay: 0.5s;
+      animation-delay: 1.1s;
+    }
+
+    &:hover .courses__select {
+      transform: translateX(0px);
+    }
+    &:hover .courses__price {
+      margin-right: 50px;
+    }
+
+    &:hover .courses__select__tick {
+      transform: rotate(360deg);
+      transition-delay: 0.1s;
+      transition-duration: 0.5s;
     }
   }
 
-    &__select {
+  &__select {
     background-color: $colour-tertiary;
     transform: translateX(95px);
-    width: 95px;
+    width: 100px;
     margin: -12px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s ease-in-out;
-
 
     &__tick {
       background-color: $colour-tertiary;
@@ -134,25 +142,14 @@
       color: white;
     }
   }
-  
-      &:hover &__select {
-      transform: translateX(0px);
-    }
-    &:hover &__price{
-      margin-right: 50px;
-    }
-
-    &:hover &__select__tick {
-      transform: rotate(360deg);
-      transition-delay: 0.1s;
-      transition-duration: 0.5s;}
-    
 }
 
 .order {
   display: flex;
   justify-content: center;
   margin-bottom: 80px;
+
+  .btn {
+    width: 210px;
+  }
 }
-
-

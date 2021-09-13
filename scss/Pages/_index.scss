@@ -71,6 +71,11 @@
       font-weight: bold;
       display: flex;
       align-items: center;
+
+      &:hover {
+          background-color: lighten($colour-primary, 30%);
+          transition: 200ms;
+      }
     }
   }
   .number {
@@ -128,4 +133,3 @@
     margin: 4px 0px 0px 0px;
   }
 }
-
