@@ -20,11 +20,27 @@
     padding-right: 30px;
     position: absolute;
     right: 0;
-    
-
   }
 
   i.fas.fa-heart {
     color: $colour-secondary;
   }
 
+  .heart {
+  i.far.fa-heart {
+    opacity: 1;
+    &:hover {
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  i.fas.fa-heart {
+    opacity: 0;
+    transition: 1s ease-in;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}

@@ -3,17 +3,15 @@
 @import "./Utils/mixins";
 @import "./Utils/mediaqueries";
 
-
 @import "./Base/base";
 @import "./Base/typography";
 @import "./Base/animations";
 
 @import "./Components/buttons";
 
-@import "./styles.scss";
 @import "./Layout/footer";
 @import "./Layout/header";
 
 @import "./Pages/loader";
+@import "./Pages/index";
 @import "./Pages/restaurants";
-
