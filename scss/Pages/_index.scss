@@ -73,8 +73,8 @@
       align-items: center;
 
       &:hover {
-          background-color: lighten($colour-primary, 30%);
-          transition: 200ms;
+        background-color: lighten($colour-primary, 30%);
+        transition: 200ms;
       }
     }
   }
@@ -113,6 +113,7 @@
   border-radius: 20px;
   @include box-shadow;
   margin-bottom: 20px;
+  position: relative;
 
   img {
     width: 100%;
@@ -131,5 +132,21 @@
   }
   p {
     margin: 4px 0px 0px 0px;
+  }
+  .new {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    margin-right: 10px;
+    background-color: rgb(153 226 208);
+    border-radius: 2px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: $green;
   }
 }

@@ -1,4 +1,36 @@
-@media all and (min-width: 600px) {
+//media query tablette//
+@media all and (min-width: 600px) and (max-width: 799px) {
+  #fonctionnement .choices {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #restaurants_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .box {
+    width: 48%;
+  }
+  .courses {
+    &__type {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__box {
+      width: 30%;
+    }
+  }
+
+  .image_main img {
+    height: 350px;
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 1077px) {
   #fonctionnement .choices {
     flex-direction: row;
     justify-content: space-around;
@@ -34,5 +66,35 @@
 
   .image_main img {
     height: 350px;
+  }
+}
+
+//mediaquery desktop//
+
+@media all and (min-width: 1078px) {
+  #fonctionnement .choices {
+    flex-direction: row;
+    justify-content: center;
+
+    i {
+      width: auto;
+    }
+    h3 {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    &__boxes {
+      margin-right: 50px;
+    }
+  }
+
+  #restaurants_container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .box {
+    width: 23%;
   }
 }

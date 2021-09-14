@@ -54,15 +54,16 @@
   position: relative;
   &::after {
     content: "";
-    width: 45px;
-    height: 4px;
+    width: 42px;
+    height: 3px;
     position: absolute;
-    margin-left: 10px;
     left: 0;
-    background-color: $colour-tertiary;
+    bottom: -10px;
+    background-color: rgb(153 226 208);
   }
 }
 .courses {
+  margin: 35px 0px 45px 0px;
   &__title {
     width: 99%;
     overflow: hidden;
@@ -71,9 +72,7 @@
     margin: 10px;
     align-items: flex-start;
   }
-  &__type {
-    margin: 35px 0px 45px 0px;
-  }
+
   &__price {
     font-weight: bold;
     display: flex;
