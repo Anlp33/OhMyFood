@@ -24,6 +24,7 @@
   &__title {
     display: flex;
     justify-content: space-between;
+    padding: 30px 10px 20px 0px;
   }
 
   h2 {
@@ -43,10 +44,6 @@
     text-overflow: ellipsis;
     overflow: hidden;
   }
-
-  &__title {
-    padding: 30px 10px 20px 10px;
-  }
 }
 
 .menu__type {
@@ -64,6 +61,7 @@
 }
 .courses {
   margin: 35px 0px 45px 0px;
+  
   &__title {
     width: 99%;
     overflow: hidden;

@@ -14,14 +14,22 @@
   .box {
     width: 48%;
   }
+
+  .menu {
+    padding: 30px;
+  }
   .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     &__type {
       display: flex;
       justify-content: space-between;
     }
 
     &__box {
-      width: 30%;
+      width: 80%;
     }
   }
 
@@ -53,19 +61,26 @@
   .box {
     width: 48%;
   }
+  .menu {
+    padding: 30px;
+  }
   .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     &__type {
       display: flex;
       justify-content: space-between;
     }
 
     &__box {
-      width: 30%;
+      width: 80%;
     }
   }
 
   .image_main img {
-    height: 350px;
+    height: 450px;
   }
 }
 
@@ -96,5 +111,19 @@
   }
   .box {
     width: 23%;
+  }
+  .menu {
+    padding: 30px;
+  }
+  .courses {
+    display: flex;
+    justify-content: space-between;
+
+    &__box {
+      width: 29%;
+    }
+  }
+  .image_main img {
+    height: 550px;
   }
 }
