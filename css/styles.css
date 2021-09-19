@@ -71,11 +71,11 @@ a {
   background: #f6f6f6;
   opacity: 1;
   z-index: 1;
+  transition: opacity 300ms ease-in;
 }
 .heart .empty:hover {
   opacity: 0;
   cursor: pointer;
-  transition: 300ms ease-in;
 }
 .heart .full {
   background: linear-gradient(338deg, #9356dc, #ff79da);
@@ -402,9 +402,9 @@ header {
 }
 .courses__title {
   width: 99%;
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
   margin: 10px;
   align-items: flex-start;
 }
@@ -502,9 +502,9 @@ header {
   }
 
   .courses {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-content: space-between;
+    justify-content: space-around;
   }
   .courses__type {
     display: flex;
@@ -559,7 +559,7 @@ header {
   }
 
   .image_main img {
-    height: 450px;
+    height: 400px;
   }
 }
 @media all and (min-width: 1078px) {
@@ -594,14 +594,15 @@ header {
 
   .courses {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .courses__box {
     width: 29%;
   }
 
   .image_main img {
-    height: 550px;
+    height: 400px;
   }
 }
 

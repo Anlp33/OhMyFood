@@ -25,11 +25,11 @@
     background: $grey-light;
     opacity: 1;
     z-index: 1;
+    transition: opacity 300ms ease-in;
 
     &:hover {
       opacity: 0;
       cursor: pointer;
-      transition: 300ms ease-in;
     }
   }
 

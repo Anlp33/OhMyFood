@@ -19,9 +19,9 @@
     padding: 30px;
   }
   .courses {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-content: space-between;
+    justify-content: space-around;
 
     &__type {
       display: flex;
@@ -80,7 +80,7 @@
   }
 
   .image_main img {
-    height: 450px;
+    height: 400px;
   }
 }
 
@@ -117,13 +117,14 @@
   }
   .courses {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
     &__box {
       width: 29%;
     }
   }
   .image_main img {
-    height: 550px;
+    height: 400px;
   }
 }

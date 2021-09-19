@@ -36,13 +36,11 @@
   h3 {
     margin: 0;
     font-size: 17px;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    @include overflow;
   }
   p {
     margin: 4px 0px 0px 0px;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    @include overflow;
   }
 }
 
@@ -64,9 +62,8 @@
   
   &__title {
     width: 99%;
-    overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    @include overflow;
     margin: 10px;
     align-items: flex-start;
   }
