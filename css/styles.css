@@ -17,37 +17,6 @@ a {
   color: black;
 }
 
-@keyframes flash {
-  0% {
-    background-color: #9356dc;
-  }
-  50% {
-    background-color: #ff79da;
-  }
-  100% {
-    background-color: #99e2d0;
-  }
-}
-@keyframes loader {
-  0% {
-    opacity: 1;
-    z-index: 10;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes fadein {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-10px);
-  }
-}
 .btn {
   background: linear-gradient(338deg, #9356dc, #ff79da);
   border-radius: 30px;
@@ -95,6 +64,37 @@ a {
   right: 0;
 }
 
+@keyframes flash {
+  0% {
+    background-color: #9356dc;
+  }
+  50% {
+    background-color: #ff79da;
+  }
+  100% {
+    background-color: #99e2d0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 10;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
 .footer {
   background-color: #353535;
   color: white;
