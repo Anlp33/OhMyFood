@@ -29,6 +29,10 @@ a {
   }
 }
 @keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 10;
+  }
   100% {
     opacity: 0;
     z-index: -1;
@@ -71,7 +75,7 @@ a {
   background: #f6f6f6;
   opacity: 1;
   z-index: 1;
-  transition: opacity 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 .heart .empty:hover {
   opacity: 0;
@@ -165,9 +169,7 @@ header {
   position: fixed;
   z-index: 2;
   background-color: white;
-  animation: loader 0.4s;
-  animation-delay: 2.5s;
-  animation-fill-mode: both;
+  animation: 0.1s loader 2.5s both;
 }
 .loader img {
   margin-bottom: 30px;

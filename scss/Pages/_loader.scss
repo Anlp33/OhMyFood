@@ -7,9 +7,8 @@
   position: fixed;
   z-index: 2;
   background-color: white;
-  animation: loader 0.4s;
-  animation-delay: 2.5s;
-  animation-fill-mode: both;
+  animation: 0.1s loader 2.5s both;
+
 
   img {
     margin-bottom: 30px;
