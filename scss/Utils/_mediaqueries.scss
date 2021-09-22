@@ -86,7 +86,7 @@
 
 //mediaquery desktop//
 
-@media all and (min-width: 1078px) {
+@media all and (min-width: 1078px) and (max-width: 1920px) {
   #fonctionnement .choices {
     flex-direction: row;
     justify-content: center;
