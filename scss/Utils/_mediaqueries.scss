@@ -19,9 +19,9 @@
     padding: 30px;
   }
   .courses {
+    display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-around;
+    justify-content: center;
 
     &__type {
       display: flex;
