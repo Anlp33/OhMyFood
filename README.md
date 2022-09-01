@@ -1,2 +1,2 @@
 # Anne-LaurePoire_3_27082021
-Projet 3 - Dynamisez une page web avec des animations CSS
+Project #3 of OpenClassrooms certification - Liven up a web page with CSS animations.
