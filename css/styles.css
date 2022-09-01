@@ -165,7 +165,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
   width: 100%;
+  max-width: 1440px;
   height: 100%;
   position: fixed;
   z-index: 2;
@@ -355,7 +357,7 @@ header {
   position: relative;
   margin-top: -50px;
   background-color: #f6f6f6;
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
   padding: 10px;
 }
 .menu h1 {
@@ -565,7 +567,7 @@ header {
     height: 400px;
   }
 }
-@media all and (min-width: 1078px) and (max-width: 1920px) {
+@media all and (min-width: 1078px) {
   #fonctionnement .choices {
     flex-direction: row;
     justify-content: center;
